@@ -1,141 +1,42 @@
-/* General styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffefba, #ffffff); /* Changed background */
     color: #333;
+    padding-top: 56px; /* Add padding for fixed navbar */
 }
-
-header {
-    background: rgba(0, 0, 0, 0.8);
-    color: #ffffff;
-    padding: 2rem 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.header-text {
+    color: #ccc;
 }
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #61dafb;
-    text-decoration: none;
+.nav-link {
     font-weight: bold;
-    transition: color 0.3s ease;
 }
-
-nav ul li a:hover {
-    color: #ffcc00;
-}
-
-h1 {
-    font-size: 4rem;
-    margin: 0;
-    color: #ffcc00;
-}
-
-section {
-    padding: 4rem 2rem;
-    margin: 2rem auto;
-    background-color: rgba(255, 255, 255, 0.9);
+.section {
+    background: #fff;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Increased shadow */
+    margin-bottom: 20px;
 }
-
-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #282c34;
-    text-align: center;
-    border-bottom: 2px solid #61dafb;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-}
-
-section h3 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    color: #7b4397;
-}
-
-.about-info, .contact-info {
-    margin-bottom: 2rem;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
 .project {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
 }
-
-.project h3 {
-    margin-top: 0;
-    color: #4a90e2;
+.icon {
+    color: #007bff;
+    margin-right: 10px;
 }
-
-.project:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #282c34;
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background: #343a40;
+    color: #fff;
+    padding: 20px 0;
 }
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    section {
-        padding: 2rem 1rem;
-    }
-
-    section h2 {
-        font-size: 1.8rem;
-    }
-
-    section h3 {
-        font-size: 1.5rem;
-    }
+.nav-link {
+    color: #fff;
+    transition: color 0.3s;
 }
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('https://source.unsplash.com/1600x900/?web,development') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
+.nav-link:hover {
+    color: #007bff;
 }
-
+.fixed-top {
+    background-color: rgba(52, 58, 64, 0.9); /* Navbar transparency */
+    transition: background-color 0.5s ease;
+}
