@@ -3,84 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usama's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Usama Faraz - Web Developer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="Usama Faraz - Web Developer portfolio showcasing skills, projects, and contact information.">
+    <meta name="keywords" content="Usama Faraz, web developer, portfolio, HTML, CSS, JavaScript, Node.js, React, responsive design">
+    <meta name="author" content="Usama Faraz">
+
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about" target="_blank">About</a></li>
-                <li><a href="#projects" target="_blank">Projects</a></li>
-                <li><a href="#contact" target="_blank">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Usama - Web Developer</h1>
-    </header>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+    <div class="container">
+        <header class="text-center py-5 bg-dark text-white" data-aos="fade-down">
+            <h1>Usama Faraz</h1>
+            <p class="header-text">Hello, I'm Usama, a passionate web developer with experience in creating dynamic and responsive websites.</p>
+            <nav class="nav justify-content-center">
+                <a class="nav-link" href="#about">About Me</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#certifications">Certifications</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
+        </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello, I'm Usama, a passionate web developer with experience in creating dynamic and responsive websites.</p>
-        
-        <h3>Education</h3>
-        <div class="about-info">
+        <section id="about" class="section" data-aos="fade-right">
+            <h2>About Me</h2>
+            <p><strong>Education:</strong></p>
             <p>Bachelor of Science in Cyber Security</p>
-            <p>Dawood University of Engineering and technology</p>
+            <p>Dawood University of Engineering and Technology</p>
             <p>2021 - 2025</p>
-        </div>
+        </section>
 
-        <h3>Skills</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>React</li>
-            <li>Git</li>
-            <li>Responsive Design</li>
-        </ul>
+        <section id="skills" class="section" data-aos="fade-left">
+            <h2>Skills</h2>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-code icon"></i> HTML</li>
+                <li><i class="fas fa-code icon"></i> CSS</li>
+                <li><i class="fas fa-code icon"></i> JavaScript</li>
+                <li><i class="fas fa-server icon"></i> Node.js</li>
+                <li><i class="fas fa-network-wired icon"></i> Express</li>
+                <li><i class="fab fa-react icon"></i> React</li>
+                <li><i class="fas fa-code-branch icon"></i> Git</li>
+                <li><i class="fas fa-mobile-alt icon"></i> Responsive Design</li>
+            </ul>
+        </section>
 
-        <h3>Certifications</h3>
-        <ul>
-            <li>Programming essential in python - Partner:PCAP</li>
-            <li>Introduction to Database and SQL - Great Learning</li>
-            <li>WEB ENGINEERING(PHP, CODIGNATOR,LARAVEL) - Hazara institutes of technology</li>
-        </ul>
-    </section>
+        <section id="certifications" class="section" data-aos="fade-right">
+            <h2>Certifications</h2>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-certificate icon"></i> Programming essential in Python - Partner: PCAP</li>
+                <li><i class="fas fa-database icon"></i> Introduction to Database and SQL - Great Learning</li>
+                <li><i class="fas fa-code icon"></i> Web Engineering (PHP, CodeIgniter, Laravel) - Hazara Institutes of Technology</li>
+            </ul>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Personal Portfolio Website</h3>
-            <p>This project showcases my skills in HTML, CSS, and JavaScript. The portfolio includes sections for about, projects, and contact. It features a responsive design and smooth scrolling navigation.</p>
-        </div>
-        <div class="project">
-            <h3>Simple Blog Platform</h3>
-            <p>This blog platform allows users to create, edit, and delete blog posts. It was built using HTML, CSS, JavaScript, and a backend with Node.js and Express. The platform includes user authentication and a comment section for each post.</p>
-        </div>
-        <div class="project">
-            <h3>Basic To-Do Application</h3>
-            <p>A simple to-do application that helps users manage their tasks. It includes features such as adding, deleting, and marking tasks as completed. The app was built using HTML, CSS, and JavaScript, with local storage for persisting data.</p>
-        </div>
-    </section>
+        <section id="projects" class="section" data-aos="fade-left">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Personal Portfolio Website</h3>
+                <p>This project showcases my skills in HTML, CSS, and JavaScript. The portfolio includes sections for about, projects, and contact. It features a responsive design and smooth scrolling navigation.</p>
+            </div>
+            <div class="project">
+                <h3>Simple Blog Platform</h3>
+                <p>This blog platform allows users to create, edit, and delete blog posts. It was built using HTML, CSS, JavaScript, and a backend with Node.js and Express. The platform includes user authentication and a comment section for each post.</p>
+            </div>
+            <div class="project">
+                <h3>Basic To-Do Application</h3>
+                <p>A simple to-do application that helps users manage their tasks. It includes features such as adding, deleting, and marking tasks as completed. The app was built using HTML, CSS, and JavaScript, with local storage for persisting data.</p>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <p>Email: usamafaraz99@gmail.com</p>
-            <p>Phone: +923219211586</p>
-            <p>Address: Block 8, Clifton, karachi</p>
-            <p>LinkedIn: <a href="www.linkedin.com/in/usama-faraz-7006b2232" target="_blank">linkedin.com/in/usama</a></p>
-        </div>
-    </section>
+        <section id="contact" class="section" data-aos="fade-right">
+            <h2>Contact</h2>
+            <p><i class="fas fa-envelope icon"></i> Email: <a href="mailto:usamafaraz99@gmail.com">usamafaraz99@gmail.com</a></p>
+            <p><i class="fas fa-phone icon"></i> Phone: <a href="tel:+923219211586">+92 321 9211586</a></p>
+            <p><i class="fas fa-map-marker-alt icon"></i> Address: Block 8, Clifton, Karachi</p>
+            <p><i class="fab fa-linkedin icon"></i> LinkedIn: <a href="https://linkedin.com/in/usama" target="_blank">linkedin.com/in/usama</a></p>
+        </section>
 
-    <footer>
-        <p>&copy; 2024 Usama. All rights reserved.</p>
-    </footer>
+        <footer class="text-center py-3 bg-dark text-white" data-aos="fade-up">
+            <p>© 2024 Usama. All rights reserved.</p>
+        </footer>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 
